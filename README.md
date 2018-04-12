@@ -1,14 +1,20 @@
 # Main
 Management materials and content
 
+![Open Science MOOC modules](moocpng.png)
+
 ### Table of contents
 - [Contributing](#Contributing)
+- [Module design protocol](#Module design protocol)
 - [Roadmap](#Roadmap)  
 - [Code of conduct](#COC)
 - [Licenses](#Licenses)  
 
 ## Contributing <a name="Contributing"></a>
-See [CONTRIBUTING](CONTRIBUTING.md)    
+See [CONTRIBUTING](CONTRIBUTING.md).
+
+## Module design protocol <a name="Module design protocol"></a>
+See [Module design protocol](MODULE_DESIGN_PROTOCOL.md).
 
 ## Roadmap <a name="Roadmap"></a>
 ![Roadmap](Roadmap.png)
