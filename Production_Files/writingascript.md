@@ -1,10 +1,7 @@
 Writing a script (audio or video)
 =================================
 
-The purpose of creating a script is to create a narrative or storyline
-for your media. It should have a clear flow, with a distinct beginning,
-middle, and ending for viewers. A strong main question or theme helps to
-provide focus and engage viewers.
+The purpose of creating a script is to create a narrative or storyline for your media. It should have a clear flow, with a distinct beginning, middle, and ending for viewers. A strong main question or theme helps to provide focus and engage viewers.
 
 A standard script should have three parts:
 
@@ -64,4 +61,25 @@ Tips for script writing
 
     -   Keep it short -- 5/6 minutes is a good target
     
-    -   At about 13o words/min, this means a script should comprise about 700-800 words
+    -   At about 130 words/min, this means a script should comprise about 700-800 words
+    
+-   Segments
+
+    -   Break down stories into chunks to help guide the thinking process
+    
+-   Preparation
+    
+    -   Let your speakers know enough information to understand the video beforehand
+    
+    -   For example, by sharing details about the MOOC, your module, and this document
+    
+    -   Get someone unfamiliar with the topic to review your script
+    
+
+Visual aids
+-----------------------
+
+Think about any relevant visuals that can be used to support your text. For example, a powerpoint (or open source version) can be created with key images, bullets, and other content can be displayed alongside the audio presentation.
+
+Make sure that either you own the copyright to all visual material, including photos, animations, drawings, or other videos. Otherwise, only use copyright free material, or what which you have permission to use, for you presentations.
+
