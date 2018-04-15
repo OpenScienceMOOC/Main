@@ -63,3 +63,5 @@ Tips for script writing
     -   Shorter videos are more engaging
 
     -   Keep it short -- 5/6 minutes is a good target
+    
+    -   At about 13o words/min, this means a script should comprise about 700-800 words
