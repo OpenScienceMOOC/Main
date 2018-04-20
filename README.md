@@ -5,7 +5,7 @@ Management materials and content
 
 ### Table of contents
 - [Contributing](#Contributing)
-- [Module design protocol](#Module design protocol)
+- [Module design protocol](#Module_design_protocol)
 - [Roadmap](#Roadmap)  
 - [Code of conduct](#COC)
 - [Licenses](#Licenses)  
@@ -13,7 +13,7 @@ Management materials and content
 ## Contributing <a name="Contributing"></a>
 See [CONTRIBUTING](CONTRIBUTING.md).
 
-## Module design protocol <a name="Module design protocol"></a>
+## Module design protocol <a name="Module_design_protocol"></a>
 See [Module design protocol](MODULE_DESIGN_PROTOCOL.md).
 
 ## Roadmap <a name="Roadmap"></a>
