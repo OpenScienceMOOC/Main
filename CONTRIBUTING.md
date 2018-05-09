@@ -1,5 +1,16 @@
 # Contribution Guidelines
+These are the main contributing guidelines for the development of this MOOC, and apply to each module within. The development structure for this is based on a combination of two things:
+1. Invited experts as part of a core development team, led by one or two managers for each module.
+1. Open participation, where anyone can contribute using the standard processes on GitHub.
 
+At the present, development is in very early stages, as this is an entirely crowd-sourced and volunteer-led project. We are focusing inititally on [Module 5](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source) to run as a pilot for testing and receiving feedback. After this, the protocol and content will be revised, and then applied accordingly to the development of the remaining modules.
+
+## Key steps 
+1. [Forming a team for collaborative design](https://github.com/OpenScienceMOOC/Main/blob/master/Production_Files/MODULE_DESIGN_PROTOCOL.md#forming-a-team-for-collaborative-design)
+1. [The development process](https://github.com/OpenScienceMOOC/Main/blob/master/Production_Files/MODULE_DESIGN_PROTOCOL.md#the-development-process)
+1. Familiarise yourself with the [script writing guide](https://github.com/OpenScienceMOOC/Main/blob/master/Production_Files/Writing_a_script.md), the [script template](https://github.com/OpenScienceMOOC/Main/blob/master/Production_Files/Script_template.md) and the [video management protocol](https://github.com/OpenScienceMOOC/Main/blob/master/Production_Files/Video_management_protocol.md).
+
+Each team will adhere to the [MOOC planning template](https://github.com/OpenScienceMOOC/Main/blob/master/Production_Files/MOOC%20planning%20template.docx) to structure development in a systematic way.
 
 ## Reporting issues
 
@@ -10,9 +21,12 @@
 Refer to the [README](README.md).
 
 ## Content style
+This is flexible to each module as required, and defined by each development team in advance as part of the protocol.
 
 ## Code style
+Flexible, as long as it is consistent. Ideally, all content would be drafted in markdown, for increasing re-use. This can be easily performed in R Studio, for example, which also has a GitHub interface to make collaborating on this project even simpler.
 
+Please read [this guide](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN) to familiarise yourself with this process. Which in itself, is actually fairly powerful for Open Science!
 
 ## Pull requests
 - Try not to pollute your pull request with unintended changes – keep them simple and small. If possible, squash your commits.
