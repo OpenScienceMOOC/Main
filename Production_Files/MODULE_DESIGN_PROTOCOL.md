@@ -51,11 +51,11 @@ Each module also has its own specific set of key resources to aid with content d
 ## The development process
 
 ```markdown
-- [ ] 
+- [ ] Completed!
 ```
 
 1. Initiate and plan
-   1. Define the target group - [ ]
+   1. Define the target group - [ ] Completed!
    2. Refine the learning objectives and outcomes - [ ]
    3. Design the course outline - [ ]
        1. Combination of lectures, reading, and activities - [ ]
