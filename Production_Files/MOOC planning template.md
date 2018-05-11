@@ -1,10 +1,15 @@
+---
+title: "Mooc planning template"
+author: "Jon Tennant"
+date: "11 May 2018"
+output: html_document
+---
+
 # MOOC planning template
 
 ## How to use this template
 
 This is to provide a structured check list to track content development.
-
-Each 
 
 - For the 'Delivered' column, a simple Yes/No Scheme should be used.
 - For the 'Status' column, please use one of the three symbols below.
@@ -15,12 +20,15 @@ Each
 Status traffic light scheme:
 
 Green: All looks good
+
 ![Green](https://img.shields.io/badge/Status-text-green.svg)
 
 Orange: Issues that can impact launch date
+
 ![Orange](https://img.shields.io/badge/Status-text-orange.svg)
 
 Red: Launch date in danger
+
 ![Red](https://img.shields.io/badge/Status-text-red.svg)
 
 
@@ -33,18 +41,18 @@ Red: Launch date in danger
     <td>Comments</td>
   </tr>
   <tr>
-    <td>Initiate and plan</td>
-    <td> Yes </td>
-    <td> ![Green](https://img.shields.io/badge/Status-text-green.svg) </td>
-    <td> 2018/05/10 </td>
-    <td> No problems </td>
+    <td><b>Initiate and plan</b></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Kick-off </td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>![Green](https://img.shields.io/badge/Status-text-green.svg) </td>
+    <td> 2018/05/10 </td>
+    <td> No problems </td>
   </tr>
   <tr>
     <td>Define target group</td>
