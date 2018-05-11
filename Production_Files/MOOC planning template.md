@@ -49,22 +49,21 @@ Red: Launch date in danger
   </tr>
   <tr>
     <td>Kick-off </td>
-    <td></td>
-    <td>    ```markdown 
-    ![Green](https://img.shields.io/badge/Status-text-green.svg)  ```</td>
+    <td> Yes </td>
+    <td>![Green](https://img.shields.io/badge/Status-text-green.svg)</td>
     <td> 2018/05/10 </td>
     <td> No problems </td>
   </tr>
   <tr>
     <td>Define target group</td>
-    <td></td>
+    <td> Yes </td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>Refine learning objectives/outcomes</td>
-    <td></td>
+    <td> Yes </td>
     <td></td>
     <td></td>
     <td></td>
