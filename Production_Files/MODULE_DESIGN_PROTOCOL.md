@@ -51,73 +51,71 @@ Each module also has its own specific set of key resources to aid with content d
 ## The development process
 
 1. Initiate and plan
-   1. Define the target group
-   2. Refine the learning objectives and outcomes
-   3. Design the course outline
-       1. Combination of lectures, reading, and activities
-   4. Design the project plan and timeline
-   5. Identify promotion channels
+   1. Define the target group - [ ]
+   2. Refine the learning objectives and outcomes - [ ]
+   3. Design the course outline - [ ]
+       1. Combination of lectures, reading, and activities - [ ]
+   4. Design the project plan and timeline - [ ]
+   5. Identify promotion channels - [ ]
 2. Designing and scripting
-   1. Identify key resources (including those already gathered)
-   2. Design learner activities with clear instructions
-   3. Find resources (video, illustrations, screencasts, podcasts, assignments, quizzes, presentations)
-   4. Write concise, engaging video (and audio) scripts
-   5. Review all learning resources, adjusting as needed
-   6. Finalise all scripts
-   7. Copyright strategy
+   1. Identify key resources (including those already gathered) - [ ]
+   2. Design learner activities with clear instructions - [ ]
+   3. Find resources (video, illustrations, screencasts, podcasts, assignments, quizzes, presentations) - [ ]
+   4. Write concise, engaging video (and audio) scripts - [ ]
+   5. Review all learning resources, adjusting as needed - [ ]
+   6. Finalise all scripts - [ ]
+   7. Copyright strategy - [ ]
 3. Recording and editing
-   1. Record either on location, online, or within studio
-   2. Preference to non-&#39;floating head&#39; styles
-   3. Edit all audio/visual material
+   1. Record either on location, online, or within studio - [ ]
+   2. Preference to non-'floating head' styles - [ ]
+   3. Edit all audio/visual material - [ ]
 4. Quizzes and assignments
-   1. First draft for feedback to instructional design
-   2. Follow up feedback
-   3. Define regularity of quizzes
-   4. Final examination
-   5. Review assignments
-   6. Other assignments (e.g., discussion prompts)
+   1. First draft for feedback to instructional design - [ ]
+   2. Follow up feedback - [ ]
+   3. Define regularity of quizzes - [ ]
+   4. Final examination - [ ]
+   5. Review assignments - [ ] 
+   6. Other assignments (e.g., discussion prompts) - [ ]
 5. Internal reviewing
-   1. All members of team cross-review content
-   2. Checks from Steering Committee
-6. External testing and review
-   1. All content via GitHub
-   2. Use existing channels from communication strategy
-7. Internal reviewing and finalisation
-   1. All members of team cross-review content
-   2. Checks from Steering Committee
-8. Implementation
-   1. Agreement on platform
-   2. Module logo (either designed or copyright free)
-   3. Module description and introduction
-   4. Instructor and guest lecturer agreement
-   5. Instructor and team member profiles
-   6. Course readings all acquired (copyright free)
-   7. Port all content to selected platform
-   8. Make sure all content is also deposited in the Open Science Framework
-       1. For future indexing via Zenodo
+   1. All members of team cross-review content - [ ]
+   2. Checks from Steering Committee - [ ]
+6. External testing and review 
+   1. All content via GitHub - [ ]
+   2. Use existing channels from communication strategy - [ ]
+7. Internal reviewing and finalisation - [ ]
+   1. All members of team cross-review content - [ ]
+   2. Checks from Steering Committee - [ ]
+8. Implementation 
+   1. Agreement on platform - [ ]
+   2. Module logo (either designed or copyright free) - [ ]
+   3. Module description and introduction - [ ]
+   4. Instructor and guest lecturer agreement - [ ]
+   5. Instructor and team member profiles - [ ]
+   6. Course readings all acquired (copyright free) - [ ]
+   7. Port all content to selected platform - [ ]
+   8. Make sure all content is also deposited in the Open Science Framework - [ ]
+       1. For future indexing via Zenodo - [ ]
 9. Promotion
-   1. Content and communication calendar/strategy/timeline
+   1. Content and communication calendar/strategy/timeline - [ ]
    2. Identify relevant channels, including:
-       1. Mailing lists
-       2. Social media (including relevant hashtags)
-       3. Organisations
-       4. Individuals
-       5. Websites
-       6. Conferences
-   3. Images for use in social media
-   4. Course title marketing check
+       1. Mailing lists - [ ]
+       2. Social media (including relevant hashtags) - [ ]
+       3. Organisations - [ ]
+       4. Individuals - [ ]
+       5. Websites - [ ]
+       6. Conferences - [ ]
+   3. Images for use in social media - [ ]
+   4. Course title marketing check - [ ] 
 10. Launch
-    1. Publicity start
-    2. Open and free for all; continuous, self-paced learning; 100% online
-    3. Soft launch date
-    4. Course launch date
-    5. Monitor learner experiences and reactions
-    6. Prepare to provide additional information if required
-11. Reviewing and optimisation
-    1. Collate and review learner feedback at regular intervals
-    2. Track any potential new information during course duration
-    3. Prepare evaluation report
-    4. Evaluation meeting
-    5. Optimise content where relevant
-
-Note. This planning template was adapted based on material provided by the University of Copenhagen and the Centre for Innovation, Leiden University.
+    1. Publicity start - [ ]
+    2. Open and free for all; continuous, self-paced learning; 100% online - [ ]
+    3. Soft launch date - [ ]
+    4. Course launch date - [ ]
+    5. Monitor learner experiences and reactions - [ ]
+    6. Prepare to provide additional information if required - [ ]
+11. Reviewing and optimisation - [ ]
+    1. Collate and review learner feedback at regular intervals - [ ]
+    2. Track any potential new information during course duration - [ ]
+    3. Prepare evaluation report - [ ]
+    4. Evaluation meeting - [ ]
+    5. Optimise content where relevant - [ ]
