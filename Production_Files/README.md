@@ -3,13 +3,13 @@
 This repo is aimed to provide the production files for content development and management for each MOOC module. Each MOOC repo has its own copy of these files, which can be customised for each module as needed.
 
 ## Table of contents
-- [MOOC planning template](Mooc_planning_template.md)
-- [MOOC design protocol](MOOC_DESIGN_PROTOCOL.md)
+- [MOOC planning template](MOOC_planning_template.md)
+- [Module design protocol](MODULE_DESIGN_PROTOCOL.md)
 - [Writing a script](Writing_a_script.md)  
 - [Script template](Script_template.md)
 - [Video management protocol](Video_management_protocol.md)
 
-## Licenses <a name="Licenses"></a>
+## Licenses
 
 ### Content
 MOOC content license: [![CC0 Public Domain Dedication](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
