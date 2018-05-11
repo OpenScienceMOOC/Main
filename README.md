@@ -11,7 +11,7 @@ Welcome to the GitHub home of the Open Science MOOC! This repo is aimed to:
 - [Roadmap](#Roadmap)  
 - [Code of conduct](#COC)
 - [Licenses](#Licenses) 
-- [Disclaimter](#Disclaimer)
+- [Disclaimer](#Disclaimer)
 
 ## Rationale <a name="Rationale"></a>
 
