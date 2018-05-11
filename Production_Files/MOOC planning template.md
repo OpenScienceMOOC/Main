@@ -50,7 +50,8 @@ Red: Launch date in danger
   <tr>
     <td>Kick-off </td>
     <td></td>
-    <td>![Green](https://img.shields.io/badge/Status-text-green.svg) </td>
+    <td>    ```markdown 
+    ![Green](https://img.shields.io/badge/Status-text-green.svg)  ```</td>
     <td> 2018/05/10 </td>
     <td> No problems </td>
   </tr>
