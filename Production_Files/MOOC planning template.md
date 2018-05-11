@@ -35,7 +35,7 @@ Red: Launch date in danger
   <tr>
     <td>Initiate and plan</td>
     <td> Yes </td>
-    <td>![Green](https://img.shields.io/badge/Status-text-green.svg)</td>
+    <td> ![Green](https://img.shields.io/badge/Status-text-green.svg) </td>
     <td> 2018/05/10 </td>
     <td> No problems </td>
   </tr>
