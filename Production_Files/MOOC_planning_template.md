@@ -44,7 +44,6 @@ Red: Launch date in danger
 |  Design course outline              |  Nope      |  ![Green](https://img.shields.io/badge/Status-text-green.svg)     |  2018/05/31 |  |
 |  Design project plan and timeline             |  Nope        |  ![Green](https://img.shields.io/badge/Status-text-green.svg)   |  2018/05/31 | |
 |  Identify promotion channels             |  Nope        |  ![Green](https://img.shields.io/badge/Status-text-green.svg)   |  2018/05/31 | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Design and scripting**  |          |             |                 |                    |
 |  Identify key resources |     |    |   | |
 |  Design learner activities   |    |    |   | |
@@ -53,23 +52,18 @@ Red: Launch date in danger
 |  Review all learning resources  |     |    |   | |
 |  Finalise all scripts   |     |    |   | |
 |  Copyright strategy  |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Recording and editing**  |                   |           |                 |                    |
 |  Record on location/in studio  |    |    |   | |
 |  Edit all audio/visual material  |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Internal reviewing**  |                   |           |                 |                    |
 |  Cross-check and review content  |     |    |   | |
 |  Checks from Steering Committee  |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **External testing and review**  |         |           |           |                    |
 |  All reviewing conducted via GitHub  |     |    |   | |
 |  Existing channels from communications strategy  |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Internal reviewing and finalisation**  |           |           |                 |              |
 |  Cross-review and check content  |     |    |   | |
 |  Final checks from Steering Committee  |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Implementation**  |           |           |                 |              |
 |  Agreement on platform  |     |    |   | |
 |  Module logo designed  |     |    |   | |
@@ -79,13 +73,11 @@ Red: Launch date in danger
 |  Course readings acquired  |     |    |   | |
 |  Port content to selected platform  |     |    |   | |
 |  All content deposited in the Open Science Framework |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Promotion**  |           |           |                 |              |
 |  Content and communication calendar/strategy/timeline  |     |    |   | |
 |  Identify relevant channels (mailing lists, social media and hashtags, organisations, individuals, websites, conferences)  |     |    |   | |
 |  Images for use in social media  |     |    |   | |
 |  Course title marketing check |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Launch**  |           |           |                 |              |
 |  Publicity start  |     |    |   | |
 |  Open and free for all, continuous, self-paced learning, 100% online  |     |    |   | |
@@ -93,7 +85,6 @@ Red: Launch date in danger
 |  Course launch  |     |    |   | |
 |  Monitoring of learner experiences and reactions  |     |    |   | |
 |  Prepare to provide additional information if required  |     |    |   | |
-|  ------------------  |  ------------  | -----------------  |  ------------ | -------------  |
 | **Reviewing and optimisation**  |           |           |                 |              |
 | Collate and review learner feedback at regular intervals  |     |    |   | |
 | Track any new information during course duration  |     |    |   | |
