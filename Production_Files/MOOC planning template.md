@@ -36,21 +36,17 @@ Red: Launch date in danger
   <tr>
     <td>Design Phase</td>
     <td>Delivered</td>
-    <td>TrafficLight</td>
+    <td>Statust</td>
     <td>Deadline</td>
     <td>Comments</td>
   </tr>
   <tr>
     <td><b>Initiate and plan</b></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Kick-off </td>
     <td> Yes </td>
-    <td>![Green](https://img.shields.io/badge/Status-text-green.svg)</td>
+    <td>(https://img.shields.io/badge/Status-text-green.svg)</td>
     <td> 2018/05/10 </td>
     <td> No problems </td>
   </tr>
