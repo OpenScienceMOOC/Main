@@ -1,41 +1,46 @@
 # MOOC planning template
 
-Traffic light scheme:
+## How to use this template
+
+This is to provide a structured check list to track content development.
+
+Each 
+
+- For the 'Delivered' column, a simple Yes/No Scheme should be used.
+- For the 'Status' column, please use one of the three symbols below.
+- For the 'Deadline' column, please use a traditional dating scheme:  2018/05/10
+- For the 'Comments' column, insert any text as neccessary.
+
+
+Status traffic light scheme:
 
 Green: All looks good
+![Green](https://img.shields.io/badge/Status-text-green.svg)
 
-    
-
-Yellow: Issues that can impact launch date
-
-    
+Orange: Issues that can impact launch date
+![Orange](https://img.shields.io/badge/Status-text-orange.svg)
 
 Red: Launch date in danger
+![Red](https://img.shields.io/badge/Status-text-red.svg)
+
 
 <table>
   <tr>
     <td>Design Phase</td>
-    <td>Delivered
-</td>
-    <td>Traffic
-Light</td>
-    <td></td>
-    <td>
-Deadline</td>
-    <td>
-Comments</td>
+    <td>Delivered</td>
+    <td>TrafficLight</td>
+    <td>Deadline</td>
+    <td>Comments</td>
   </tr>
   <tr>
     <td>Initiate and plan</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td> Yes </td>
+    <td>![Green](https://img.shields.io/badge/Status-text-green.svg)</td>
+    <td> 2018/05/10 </td>
+    <td> No problems </td>
   </tr>
   <tr>
     <td>Kick-off </td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -47,11 +52,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Refine learning objectives/outcomes</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -63,11 +66,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Design project plan and timeline</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -79,11 +80,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Designing and scripting</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -95,19 +94,16 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Design learner activities</td>
     <td></td>
     <td></td>
-    <td> </td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>Find existing key resources</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -119,11 +115,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Review all learning resources</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -135,11 +129,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Copyright strategy</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -151,11 +143,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Record on location/in studio</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -167,11 +157,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Internal reviewing</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -191,11 +179,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>External testing and review</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -207,11 +193,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Existing channels from communications strategy</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -223,11 +207,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Cross-review and check content</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -239,11 +221,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Implementation</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -255,11 +235,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Module logo designed</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -271,11 +249,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Team member and guest lecturer agreements</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -287,11 +263,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Course readings acquired</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -303,11 +277,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>All content deposited in the Open Science Framework</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -319,11 +291,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Content and communication calendar/strategy/timeline</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -335,11 +305,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Images for use in social media</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -351,11 +319,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Launch</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -367,11 +333,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Open and free for all, continuous, self-paced learning, 100% online</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -383,11 +347,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Course launch</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -399,11 +361,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Prepare to provide additional information if required</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -415,11 +375,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Collate and review learner feedback at regular intervals</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -431,11 +389,9 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Prepare evaluation report</td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -447,7 +403,6 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <td>Optimise content where relevant</td>
@@ -455,7 +410,5 @@ Comments</td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
 </table>
-
