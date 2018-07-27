@@ -1,0 +1,65 @@
+---
+title: "Example 1 - Birthday Problem"
+author: "JPT"
+date: "December 5, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+set.seed = 1234 
+n.pers = 23
+```
+
+# The Birthday Problem
+
+The birthday problem - the probability that at least two people in the room have an identical birth date.
+
+Is it something like $\frac{1}{365} \times N =$   `r round(1/365 * n.pers, 3)`?
+
+Code for this: <https://goo.gl/cf3w1Y>
+
+\begin{align} 
+ 1 - \bar p(n) &= 1 \times \left(1-\frac{1}{365}\right) 
+ \times \left(1-\frac{2}{365}\right) \times \cdots \times 
+ \left(1-\frac{n-1}{365}\right) \nonumber  \\  
+ &= \frac{ 365 \times 364 \times \cdots \times 
+   (365-n+1) }{ 365^n } \nonumber \\ 
+ &= \frac{ 365! }{ 365^n (365-n)!} = 
+   \frac{n!\cdot\binom{365}{n}}{365^n}\\
+p(n= `r n.pers`) &= `r  
+ round(1 - factorial(n.pers) * 
+         choose(365,n.pers)/ 365^n.pers, 3)`\nonumber
+\end{align}
+
+
+# Simulate this stuff
+
+ 1 - Simulate 10,000 rooms with $n = `r n.pers`$ random birthdays, and store the results in matrix where each row represents a room.   
+ 2 - For each room (row) compute the number of unique birthdays.   
+ 3 - Compute the average number of times a room has `r n.pers` unique birthdays, across 10,000 simulations, and report the complement.    
+
+```{r birthday prob, eval=TRUE, echo=TRUE}
+birthday.prob = function(n.pers, n.sims) {
+  # simulate birthdays
+  birthdays = matrix(round(runif(n.pers * n.sims, 1, 365)), 
+                      nrow = n.sims, ncol = n.pers)
+  # for each room (row) get unique birthdays
+  unique.birthdays = apply(birthdays, 1, unique)
+  # Indicator with 1 if all are unique birthdays
+  all.different = (lapply(unique.birthdays, length) == n.pers)
+  # Compute average time all have different birthdays 
+  result = 1 - mean(all.different)
+return(result)
+}
+n.pers.param = n.pers
+n.sims.param = 1e4
+birthday.prob(n.pers.param,n.sims.param)
+```
+## Results   
+
+- Many people originally think of a prob ~ $\frac{1}{365} \times N =$   `r round(1/365 * n.pers.param, 3)`
+- However the true probability is of $p(n= `r n.pers.param`) = `r round(1 - factorial(n.pers.param) * choose(365,n.pers.param)/ 365^n.pers.param, 3)`$
+- And the simulated probability is of  `r birthday.prob(n.pers = n.pers.param, n.sims = n.sims.param)`

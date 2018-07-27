@@ -1,0 +1,206 @@
+--- 
+title: "R Markdown Demo PDF"
+author: "JPT"
+output:
+  html_document:
+    df_print: paged
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: yes
+biblio-style: apsr
+fontfamily: mathpazo
+fontsize: 11pt
+geometry: margin=1in
+header-includes:
+- \usepackage[english]{babel}
+- \usepackage{color}
+- \usepackage{float}
+- \usepackage{hyperref}
+- \hypersetup{colorlinks, linkcolor=, urlcolor=blue, citecolor=blue}
+- \setlength\parindent{0pt}
+- \setlength\parskip{0.12in}
+- \frenchspacing
+bibliography: my_bib.bib
+spacing: single
+subtitle: Based on 'RMarkdownPDFExample.Rmd' by Garret Christensen
+abstract: If I were writing an article and had an abstract, it would go here!
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE) # change to echo=FALSE to turn echo permanently off
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven", "ggplot2")
+
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
+```
+
+<!-- If you want to add a table of contents, use '\tableofcontents'; add a pageprage using 'pagebreak'-->
+
+<!-- END OF PREAMBLE -->
+
+# What is R Markdown?
+This is an R Markdown document. Markdown is a simple formatting syntax for reports with embedded R code that can be exported as an html, pdf, MS Word, ODT, RTF, or markdown document; or as an html or pdf-based (Beamer) slide show. 
+
+Essentially, you write a document---like this one---in RStudio using Markdown syntax. Then you embed chunks of R code in the document, like this:
+
+```{r iris_tab}
+summary(iris)
+```
+
+When you click the **Knit** button, a document (e.g., HTML, PDF) will be generated that includes the content you've typed as well as the output of any embedded R code chunks within the document.
+
+This means that your code, analysis, and output are all in the same place! You never have to copy-and-paste a table or figure again! If you change your code and get and estimated effect size of 0.3 instead of 0.5, you don't need to scour your results section or use find and replace to change this result.
+
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>. Also check out [this tutorial](http://rmarkdown.rstudio.com/lesson-1.html) and [this cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf).
+
+# Getting Started
+
+## Installing and Loading 
+To use R Markdown, you need R and RStudio installed. Let's do that now: 
+
+1. Download and install [R](https://cran.rstudio.com/)
+2. Download and install [RStudio](https://www.rstudio.com/products/rstudio/download/)---an "integrated development environment"" or IDE for R
+
+Once you've got **RStudio open**, then 
+
+3. Install the R Markdown package by typing `install.packages("rmarkdown")` into the console
+4. Open a new .Rmd document [File > New File > R Markdown ...]
+
+## Basic Syntax
+The content of an .rdm file is a mixture of different types of syntax and code, including:
+
+- An (optional) YAML header at the beginning surrounded by "`---`"---this header gives basic document metadata and sets key style and other options, as desired
+- Text using Markdown formatting---like this!
+- R code chunks, which are the same bits of code you would write in a .R script file
+- \LaTeX\ syntax---enclose text in "`$`" for inline equations, e.g., $\hat \beta = (X'X)^{-1}X'y$ or "`$$`" for displayed equations: $$\hat \beta = (X'X)^{-1}X'y $$
+
+## Basic Options
+
+Within the R code cunks, you can se the following options:
+
+- `echo=FALSE`---prevents R source code from displaying
+- `eval=FALSE`---prevents Knitr from evaluating the R code
+- `results='hide'`---hides the results of the code 
+- `include=FALSE`---Knitr will run the code but not include in the final doc
+- `warning=FALSE`---turns off warnings
+- `message=FALSE`---turns off messages
+
+
+# Analysis Example
+
+Let's first begin by clearing our workspace and setting our working directory:
+
+```{r, echo=TRUE, message=FALSE}
+rm(list = ls()) # clear workspace; always a good idea when starting
+#setwd ("~/Documents/RA/India_BITSS/rmarkdown") # change your working directory
+```
+
+Then, let's load our packages:
+
+```{r, echo=TRUE, message=FALSE, eval=FALSE}
+need <- c("foreign", "sandwich", "ggplot2", "stargazer") # list packages you need
+have <- need %in% rownames(installed.packages()) # see which are already
+if(any(!have)) install.packages(need[!have]) # installs the missing ones 
+invisible(lapply(need, library, character.only=T)) # then loads them all
+```
+
+Load the data: 
+
+```{r, echo = T, message = F, warning=F}
+washb <- haven::read_dta("WASHBpublic_mock.dta")
+```
+
+Run the models:
+
+```{r, echo = T, message = F}
+model1 <- lm(free_chl_yn ~ treatw, data = washb) 
+model2 <- lm(free_chl_yn ~ treatw + kiswahili + english, data = washb)
+robust.se1 <- sqrt(diag(vcovHC(model1, type = "HC")))
+robust.se2 <- sqrt(diag(vcovHC(model2, type = "HC")))
+```
+
+And make our table:
+
+```{r reg, echo=T, results='asis'}
+stargazer(model1, model1, se=list(robust.se1, robust.se2), 
+          title="Made Automatically in R", 
+          out="outputR.tex", header=FALSE)
+```
+
+Note that we needed the `results = 'asis'` option to get the table to output correctly, otherwise we would have gotten the copy-and-paste \LaTeX\ output like in R.
+
+## Referring to values
+You can refer to values calculated in R by just surrounding "r" and the code with single accent marks. For example, the mean frequency is `r mean(washb$treatw, na.rm = TRUE)`. The mean frequency rounded to two decimal place is `r round(mean(washb$treatw, na.rm = TRUE), digits = 2)`.
+
+# Figures/Plots
+
+For figures generated in R, you can code them directly (here, the data comes from the `iris` dataset, which comes pre-loaded in R: 
+
+```{r, echo=FALSE}
+plot(haz06 ~ waz06, data = washb)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+For external files that you want to include, use `image: ![](de-identification_indirect.png)`. Or you can use \LaTeX\ syntax if you want advanced formatting capacity, e.g.,
+
+\begin{figure}[H]
+  \centering
+  \caption{Options for De-Identifying Data}
+  \includegraphics[width=\textwidth]{de-identification_indirect.png}
+\end{figure}
+
+# Basic Formatting in Markdown
+
+## Headers
+Make yourself a header of different levels using `#` for level 1, ``##`` for level 2 etc.
+
+## Typeface
+Surround words in `*` for *italics*, and `**` for **bold**.
+
+## Punctuation
+Use "`---`"" to get an em-dash (---) and "`--`"" to get an en-dash (--). Use normal quotation marks ("", or ''), unlike in \LaTeX\. 
+
+## Lists
+Make a numbered list using "`1.`", and a bulleted list using "`-`":
+
+1. item 1
+1. item 2
+1. item 3
+
+- item a
+- item b
+- item c
+
+## Hyperlinks
+Rmarkdown will automatically format a copy-and-pasted URL as a hyperlink (e.g., http://rmarkdown.rstudio.com). If you want to add a link to a particular word, type "`[Rstudio](http://rmarkdown.rstudio.com)`" to get [Rstudio](http://rmarkdown.rstudio.com). 
+
+## Commenting
+Commenting can get a little tricky to remember, as notation is different in R (`#`), \LaTeX\ (`%`), and markdown (`<!-- -->`). In the preamble and code snippets, comment using `#` as in R (see above). In the rest of the document, comment by surrounding text with `<!-- -->`. 
+
+# Footnotes and Citations
+
+## Footnotes
+Add a footnote using `^[I am a footnote]`.^[I am a footnote.]
+
+## Citations
+Here's how you add a citation from your BibTex library (formatted in author-date style, using the `natbib` package loaded in the preamble): 
+
+- For a single source, use `[@citekey]`, e.g., "`[@banerjee2010pitfalls]`" gives us [@banerjee2010pitfalls].
+- For multiple sources, use `[@citekey1; @citekey2; etc.]`, e.g., "`[@banerjee2010pitfalls; @easterly2001elusive]`" gives us [@banerjee2010pitfalls; @easterly2001elusive]. 
+- For an in-text citation, use `@citekey` with no brackets, e.g., "`@banerjee2010pitfalls`" gives us @banerjee2010pitfalls.
+
+For more, see http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html.
+
+And the bibliography/references will automatically show up with the sources you've added using cite keys; no need to copy and paste citations or double check to make sure you've included/removed sources as necessary!...
+
+
+
+

@@ -1,0 +1,83 @@
+---
+title: "HTML Slides"
+author: "Julia Clark"
+date: "March 16, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE) # change to echo=FALSE to turn echo permanently off
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven", "ggplot2", "plotly")
+
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
+```
+
+## HTML Slides in RMarkdown
+
+You can also use R Markdown to make slides. These can be in pdf (beamer) format, or in HTML, as in this example. The principles are the same; make new slides and add content in Markdown and R.Then click "knit" and open the resulting file in any web browser. 
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plotly Histogram
+Since we're doing HTML and now PDF, we can make some cool interactive graphs using `plotly`:
+
+```{r, echo=FALSE, message=FALSE}
+# 
+# need <- c("plotly") # list packages you need
+# have <- need %in% rownames(installed.packages()) # see which are already
+# if(any(!have)) install.packages(need[!have]) # installs the missing ones 
+# invisible(lapply(need, library, character.only=T)) # then loads them all
+
+plot_ly(x = rnorm(500), type = "histogram")
+
+```
+
+## Percent College Graduates in US Midwestern States
+```{r, echo = FALSE, message = FALSE}
+
+plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+
+```
+
+## US Unemployment Rate Over Time
+```{r, echo = FALSE, message = FALSE}
+
+plot_ly(economics, x = ~date, y = ~unemploy / pop)
+
+```
+
+## Iris Data
+```{r, echo = FALSE, message = FALSE}
+
+plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length, color = ~Species)
+
+```
+
+## A Choropleth Map
+```{r, echo = FALSE, message = FALSE}
+
+plot_ly(type = 'choropleth', 
+        locations = c('AZ', 'CA', 'VT'), 
+        locationmode = 'USA-states', 
+        colorscale = 'Viridis', 
+        z = c(10, 20, 40)) %>% layout(geo=list(scope = 'usa'))
+
+```
+

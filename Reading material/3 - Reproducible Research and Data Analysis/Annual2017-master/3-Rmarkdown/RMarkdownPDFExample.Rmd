@@ -1,0 +1,115 @@
+---
+title: "Short PDF example of R Markdown"
+author: "Garret Christensen"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: pdf_document
+---
+
+## One Click! Knit PDF and you're done.
+
+You only have to install a package once, but you have to load the library every time you want to use it. You'll see that a bunch of ugly commands and output gets displayed. You probably wouldn't really want that in your actual paper.
+
+```{r, echo=FALSE, warning=FALSE, results='hide', message=FALSE}
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven")
+
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
+```
+
+Which is why you can turn off code (with echo=FALSE) and/or results (with results='hide'). You're not going to see anything from this chunk here: 
+
+<!-- Note that since Markdown (and R Markdown) is related to HTML, you can put comments in the non-code part of the doc with HTML comment syntax. --> 
+```{r, echo=FALSE, results='asis'}
+# Permanently set echo OFF!
+knitr::opts_chunk$set(echo=FALSE)
+pi<-3.14159
+print(pi)
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+Loading the data
+----------------
+You can bring in the Stata data directly with the 'foreign' package. However, as far as I know, this package only works through Stata version 12 data. I might be wrong on that.
+
+```{r, echo = FALSE, warning=FALSE }
+WASHB<-haven::read_dta("WASHBpublic_mock.dta")
+```
+
+Running Analysis
+-----------------
+I ran some regression analysis. The results are very, very, very good.
+```{r, echo = FALSE}
+#Model 1=simple model
+model1<-lm(free_chl_yn~treatw, data=WASHB)
+#Model 2=with hetero-robust se's--a bit more complicated than Stata
+cov <- vcovHC(model1, type = "HC")
+robust.se <- sqrt(diag(cov))
+#Model 3=add baseline control variables
+model3<-lm(free_chl_yn~treatw+kiswahili+english, data=WASHB)
+```
+
+Graphics
+========
+Graphics can be easily inlaid.
+Here, I'll make a scatter plot of the WAZ vs HAZ for the children in the wASHB dataset.
+
+```{r, echo=FALSE}
+plot(haz06~waz06, data=WASHB)
+```
+
+Equations
+==========
+Equations written with LaTeX syntax works, so you can write short reports all in one file.
+$$ \frac{dN}{dt} = r * N * (1 - \frac{N}{K})$$
+
+Refer to Values
+===============
+You can refer to values calculated in R by just surrounding "r" and the code with single accent marks. 
+For example, the mean frequency is `r mean(WASHB$treatw, na.rm=TRUE)`.
+
+The mean frequency rounded to two decimal place is `r round(mean(WASHB$treatw, na.rm=TRUE), digits=2)`.
+
+Simple Output
+==============
+You can just use built in R functionality.
+
+<!--
+```{r}
+summary(model1)
+# That's a code chunk comment
+summary(model3)
+```
+-->
+
+Fancier Output
+==============
+Markdown is designed to be simple and also readable by humans in marked-up form. Like I said, mark*down*, not mark*up*. But you can still get really nicely formatted regression output with a couple of R packages, xtable or stargazer. (Very similar to estout or outreg2 in Stata.)
+
+Stargazer has three types of output (text, html, and LaTeX). 
+
+TeX->PDF
+---------------
+When we Knit a Markdown as a PDF, it actually makes that PDF using LaTeX. (See [here](http://rmarkdown.rstudio.com/pdf_document_format.html).) So you can use the .tex output option from stargazer and get nice PDF documentation.
+
+```{r, results='asis'}
+stargazer(model1, model1, model3, se=list(NULL, robust.se, NULL), title="Made Automatically in R", out="outputR.tex", header=FALSE)
+```
+
+
+Everything All in One Place?
+=====================
+You can do [citations](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html). Plots, graphs, and citations, what else do you need for a research paper?
+
+You could also maybe try Sweave (direct combo of LaTeX and R). Or, just like in Stata, you could send your output to .tex files, and include those in your master paper file.

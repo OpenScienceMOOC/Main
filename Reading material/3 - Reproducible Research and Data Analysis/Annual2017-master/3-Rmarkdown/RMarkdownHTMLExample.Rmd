@@ -1,0 +1,117 @@
+---
+title: "Short HTML example of R Markdown"
+author: "Garret Christensen"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+ONE CLICK! Knit HTML and you're done.
+===============================================================
+
+1. Remember how we had to set the directory in Stata? R Projects to the rescue! And it's got version control built right in. Look under Tools>Version Control. (OMG someone build this for Stata plz.)
+
+(If you're doing filepaths by yourself in R, and you're on a Windows machine and you copy-pasted the filepath, change slash directions. Ugh.)
+
+2. Install/Load packages. You only have to install a package once, but you have to load the library every time you want to use it. You'll see that a bunch of ugly commands and output gets displayed. You probably wouldn't really want that in your actual paper.
+
+```{r, echo=TRUE, message=FALSE, results='hide'}
+# Loading required libraries
+list.of.packages <- c("foreign", "stargazer", "sandwich", "haven")
+
+# Chicking if library installed, installed if not. 
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos= "http://cran.cnr.berkeley.edu/") 
+
+# Calling libraries 
+lapply(list.of.packages, require, character.only = TRUE)
+```
+
+Which is why you can turn off code (with echo=FALSE) and/or results (with results='hide'). You're not going to see anything from this chunk here: 
+
+<!-- Note that since Markdown (and R Markdown) is related to HTML, you can put comments in the non-code part of the doc with HTML comment syntax. --> 
+```{r, echo=FALSE, results='hide'}
+# Permanently set echo OFF!
+knitr::opts_chunk$set(echo=FALSE)
+pi<-3.14159
+print(pi)
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+Loading the data
+----------------
+You can bring in the Stata data directly with the 'foreign' package.
+
+```{r, echo = FALSE }
+WASHB<-haven::read_dta("WASHBpublic_mock.dta")
+```
+
+Running Analysis
+-----------------
+I ran some regression analysis. The results are good.
+```{r, echo = FALSE}
+#Model 1=simple model
+model1<-lm(free_chl_yn~treatw, data=WASHB)
+#Model 2=with hetero-robust se's--a bit more complicated than Stata
+cov <- vcovHC(model1, type = "HC")
+robust.se <- sqrt(diag(cov))
+#Model 3=add baseline control variables
+model3<-lm(free_chl_yn~treatw+kiswahili+english, data=WASHB)
+```
+
+Graphics
+========
+Graphics can be easily inlaid.
+Here, I'll make a map of the number of US military recruits to a 16 year period by county.
+
+```{r, echo=FALSE}
+plot(haz06~waz06, data=WASHB)
+```
+
+Equations
+==========
+Equations written with LaTeX syntax works, so you can write short reports all in one file.
+$$ \frac{dN}{dt} = r * N * (1 - \frac{N}{K})$$
+
+Refer to Values
+===============
+You can refer to values calculated in R by just surrounding "r" and the code with single accent marks. 
+For example, the mean frequency is `r mean(WASHB$treatw, na.rm=TRUE)`.
+
+
+Simple Output
+==============
+You can just use built in R functionality.
+
+```{r}
+summary(model1)
+summary(model3)
+```
+
+Fancier Output
+==============
+Markdown is designed to be simple and also readable by humans in marked-up form. Like I said, mark*down*, not mark*up*. But you can still get really nicely formatted regression output with a couple of R packages, xtable or stargazer. (Very similar to estout or outreg2 in Stata.)
+
+Stargazer has three types of output (text, html, and LaTeX). This file does HTM. For the LaTeX(PDF) version see the file (RMarkdownPDFExample.Rmd). There are very few differences--you pretty much just have to tell stargazer what to expect with the 'type' option and you're done.
+
+RMarkdown-->HTML
+---------------
+```{r, results='asis'}
+stargazer(model1, model1, model3, se=list(NULL, robust.se, NULL), type="html", out="outputR.html", title="Made Automatically in R", align=TRUE, column.labels=c("default","robust", "controls"))
+```
+
+Everything All in One Place?
+=====================
+You can do [citations](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html). Plots, graphs, and citations, what else do you need for a research paper?
+
+Knitr is smart! It doesn't re-run code that hasn't changed, meaning it can be fast. You don't need to worry about re-running your whole paper every time you change a single line of code.
+
+Knitr's predecessor is called Sweave, which is a direct combo of LaTeX and R. So you might want to try that out if you're already a LaTeX pro, but I'm pretty sure Knitr is better.
+
+Send your output to .tex files, include those in your master paper file.
