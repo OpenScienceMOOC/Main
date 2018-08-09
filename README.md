@@ -29,7 +29,7 @@ The content of this MOOC is distilled into 10 core modules. Each module will com
 
 The MOOC will be hosted through an open source provider. We expect that in the future different systems of certification will be developed, including completion badges. We also intend to build a forum for the open discussion of the MOOC and any relevant topics.
 
-![Open Science MOOC modules](moocpng.png)
+![Open Science MOOC modules](https://github.com/OpenScienceMOOC/Main/blob/master/logos/moocpng.png)
 
 
 ## Contributing <a name="Contributing"></a>
