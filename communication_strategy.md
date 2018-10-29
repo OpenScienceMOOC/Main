@@ -19,7 +19,7 @@ Two-phase release strategy:
 * [OpenCon](https://groups.google.com/group/opencon-discussion-list)
 * [LIS bibliometrics](mailto:LIS-BIBLIOMETRICS@JISCMAIL.AC.UK)
 * [PSCI COMM](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=psci-com)
-* [Access Ouverte](mailto:accesouvert@groupes.renater.fr) (note: from Serge Bauin)
+* [Accès ouvert](mailto:accesouvert@groupes.renater.fr) (note: from Serge Bauin)
 
 ## Social Media
 - Dedicated [Twitter handle](https://twitter.com/OpenSci_MOOC).
