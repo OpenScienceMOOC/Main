@@ -1,0 +1,36 @@
+# Terminology used in the Open Science MOOC explained
+
+## Open Science
+
+## Open Research
+
+## Open Scholarship
+
+## Open Access
+
+## Open Source
+(Software and Hardware used in Science)
+
+## Open Peer Review
+
+## Open Methodology
+
+## Open Data
+
+
+
+# Other Glossaries on Open Science topics
+
+Open Research Glossary by SPARCOpen - https://openresearchglossary.herokuapp.com/
+
+Open Science Dictionary by the Center for Open Science - https://osf.io/t84kh/
+
+Glossary of Open Access terms by the Imperial College London - https://www.imperial.ac.uk/research-and-innovation/support-for-staff/scholarly-communication/open-access/glossary/
+
+SHERPA Glossary of Open Access Abbreviations, Acronyms and Terms - http://www.sherpa.ac.uk/glossary.html
+
+Open Glossary - https://blogs.egu.eu/network/palaeoblog/files/2015/02/OpenGlossary1.pdf
+
+Open Science Definition by FOSTER - https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition
+
+Open Data Handbook - http://opendatahandbook.org/
