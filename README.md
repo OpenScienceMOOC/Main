@@ -16,6 +16,7 @@ For content development for individual modules, please see the relevant reposito
 - [Code of conduct](#COC)
 - [Licenses](#Licenses) 
 - [Disclaimer](#Disclaimer)
+- [Glossary](https://github.com/OpenScienceMOOC/Main/blob/master/Glossary.md)
 
 ## Rationale <a name="Rationale"></a>
 
