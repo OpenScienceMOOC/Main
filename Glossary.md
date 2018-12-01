@@ -1,4 +1,9 @@
 # Terminology used in the Open Science MOOC explained
+OS-MOOC specific terminology being clarified according to "our" (OS-MOOC community) view therefore streamlining Open Science, Open Research etc into the same concept.
+And of course also linking to the research coalition and other OS glossaries for further info.
+
+Obvious terms like Open Access and such mentioned broefly referring to a wikipedia article and recent research literature for further info. 
+
 
 ## Open Science
 
