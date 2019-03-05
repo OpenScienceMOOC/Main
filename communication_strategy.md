@@ -10,22 +10,25 @@ Two-phase release strategy:
 
 * [Schol Comm](mailto:scholcomm@lists.ala.org)
 * [Open Science](mailto:open-science@lists.okfn.org)
-* [GOAL](http://mailman.ecs.soton.ac.uk/pipermail/goal/)
+* [GOAL](mailto:goal@eprints.org)
 * [FORCE11](mailto:f11discussion@force11.org)
 * [RadicalOA](mailto:RADICALOPENACCESS@JISCMAIL.AC.UK)
-* OpenScience-NL
-* OpenScience-DE
-* [Open Science G?ttingen](https://listserv.gwdg.de/mailman/listinfo/openscience)
-* [OpenCon](https://groups.google.com/group/opencon-discussion-list)
 * [LIS bibliometrics](mailto:LIS-BIBLIOMETRICS@JISCMAIL.AC.UK)
-* [PSCI COMM](https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=psci-com)
 * [Accès ouvert](mailto:accesouvert@groupes.renater.fr) (note: from Serge Bauin)
+* [EU Open Data](mailto:euopendata@lists.okfn.org)
+* [Fossil Bank](mailto:fossil-bank@lists.okfn.org)
+* [Open Development](mailto:open-development@lists.okfn.org)
+* [Open Education](mailto:open-education@lists.okfn.org)
+* [Open Humanities](mailto:open-humanities@lists.okfn.org)
+* [EURODOC open science](mailto:open-science@eurodoc.net)
+
+(More lists available here: https://lists.okfn.org/mailman/listinfo/open-science-de)
 
 ## Social Media
-- Dedicated [Twitter handle](https://twitter.com/OpenSci_MOOC).
+- Dedicated [Twitter handle](https://twitter.com/OpenScienceMOOC).
 - Thunderclap.
-- Dedicated Facebook page.
-- Dedicated Slack/Gitter channel for all participants [join here](https://openmooc-ers-slackin.herokuapp.com/).
+- Dedicated [Facebook page](https://www.facebook.com/OpenScienceMOOC/).
+- Dedicated Slack/Gitter channel for all participants [join here](https://osmooc.herokuapp.com/).
 
 ### Twitter organisations
 
@@ -43,6 +46,52 @@ Two-phase release strategy:
 * [Mozilla Open Leaders](https://twitter.com/mozopenleaders)
 * [OpenCon](https://twitter.com/open_con)
 * [OKFN](https://twitter.com/OKFN)
+
+### Facebook groups and pages
+* https://www.facebook.com/www.mariecuriealumniassociation/
+* https://www.facebook.com/panddk/
+* https://www.facebook.com/carpentries/
+* https://www.facebook.com/FutureScienceOA/
+* https://www.facebook.com/CenterForOpenScience/
+* https://www.facebook.com/GrazOpenScienceInitiative/
+* https://www.facebook.com/eff/?rf=104017266300739 or https://www.facebook.com/eff/
+* https://www.facebook.com/openaccessglobal/
+* https://www.facebook.com/eurodoc/
+* https://www.facebook.com/oasouthasia/
+* https://www.facebook.com/IFLA.org/
+* https://www.facebook.com/InternationalScience/
+* https://www.facebook.com/OANepal/
+* https://www.facebook.com/openscholarshipinitiative/
+* https://www.facebook.com/africarxiv/
+* https://www.facebook.com/OKMaps/
+* https://www.facebook.com/pubmet/
+* https://www.facebook.com/IGDORE/
+* https://www.facebook.com/open.osodos/
+* https://www.facebook.com/EurSciEd/
+* https://www.facebook.com/socarxiv/
+* https://www.facebook.com/heterodoxacademy/
+* https://www.facebook.com/OpenAccessBd/
+* https://www.facebook.com/OOOcanada/
+* https://www.facebook.com/DirectoryofOpenAccessJournals/
+* https://www.facebook.com/Altmetric/
+* https://www.facebook.com/OpenKnowledgeEngland/
+* https://www.facebook.com/access2perspectives/
+* https://www.facebook.com/sci.hub.org/
+* https://www.facebook.com/fosteropenscience/
+* https://www.facebook.com/AcademiaObscura/
+* https://www.facebook.com/FORCE11ResearchCommunication/
+* https://www.facebook.com/OpenAccessNG/
+* https://www.facebook.com/OpenLibHums/
+* https://www.facebook.com/groups/370560229815368/?ref=group_browse_new
+* https://www.facebook.com/groups/398759490316633/?ref=group_browse_new
+* https://www.facebook.com/groups/1541992832751466/?ref=group_browse_new
+* https://www.facebook.com/groups/1650961761843383/?ref=group_browse_new
+* https://www.facebook.com/groups/ossdeveloper/?ref=group_browse_new
+* https://www.facebook.com/groups/1457457734499379/?ref=group_browse_new
+* https://www.facebook.com/groups/AllThingsOpen/?ref=group_browse_new
+* https://www.facebook.com/groups/open.science.fi/?ref=group_browse_new
+* https://www.facebook.com/groups/reviewer2/?ref=group_browse_new
+* https://www.facebook.com/groups/oaindia/?ref=group_browse_new
 
 ## Other non-social media
 
