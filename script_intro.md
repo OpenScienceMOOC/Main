@@ -31,7 +31,7 @@ What we are building then is a community of practice. We should be training ours
 
 We have a vision of the future, where research is defined by the values inherent to Open Science, such as freedom and equity. Science should be a freely available, public good. It should be rigorous and reproducible. It should be open to all. This is not 'Open' science, this is just good science. But we cannot achieve this alone. We need everyone to be working together if we are going to help to solve the major challenges that we face. We need science to work better for society.
 
-Our mission is to help the global research community to do this. How? We will help to equip them with new knowledge and skills to save time and effort, making their research more efficient. By solving problems better together, we can advance research faster, and put it to better use.
+Our mission is to help the global research community to do this. How? We will help to equip them with new knowledge and skills to save time and effort, making their research more efficient. By solving problems better together, we can advance research faster, and put it to better use. The content and material we will provide will hopefully help shape an ecosystem of researchers more and more attentive to research equity, democratization, inclusiveness and open collaboration. By solving problems better together, we can advance research faster, and put it to better use.
 
 Everything we produce is freely available, and openly licensed for re-use. It is all built in the open by a passionate community of developers. We place no restrictions on who can use what we produce, or who can join us in building it.
 
