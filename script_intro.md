@@ -39,7 +39,7 @@ Rutger: The content and material we will provide will hopefully help shape an ec
 
 Tobias: Everything we produce is freely available, and openly licensed for re-use. It is all built in the open by a passionate community of developers. We place no restrictions on who can use what we produce, or who can join us in building it.
 
-Paola (and anyone else you can get locally to shout this?): Researchers can be world-changing heroes. We will give them the power to achieve that.
+Paola (and anyone else you can get locally to shout this?): Researchers can be world-changing heroes. We will give them the power to achieve that. [No capes!](https://www.youtube.com/watch?v=RoFW2msxP6Q)
 
 
 # Licensing statement
