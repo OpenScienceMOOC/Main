@@ -23,7 +23,7 @@ Lisa: But are we using scientific research as effectively as we can? The simple 
 
 Nicholas: Enter Open Science. Open Science means many things to different people. Broadly, it can be thought of as transparent and collaborative ways to produce and share scholarly knowledge, while making the scientific process more rigorous and effective. 
 
-Jo: While 'openness' has always been a fundamental part of research, ideally at least, Open Science has really taken off over the last few years, all around the world. We now have new ecpectations about how to work with each other to produce knowledge - more transparent, more collaborative, more continuous - and how to share that with the wider society.
+Jo: While 'openness' has always been a fundamental part of research, ideally at least, Open Science has really taken off over the last few years, all around the world. We now have new expectations about how to work with each other to produce knowledge - more transparent, more collaborative, more continuous - and how to share that with the wider society.
 
 Jon: This is where the Open Science MOOC comes in. We are a mission-driven project to help make "Open" the default setting for all global research. We want to help create a welcoming and supporting community, with good tools, teachers, and role-models, and built upon a solid values-based foundation of freedom and equitable access to research. Therefore, we see Open Science as a goal: broad adoption of good scientific practices as a fundamental and essential part of the research process.
 
