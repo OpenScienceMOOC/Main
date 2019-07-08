@@ -21,7 +21,7 @@ Ricardo: Our world is facing huge challenges. From preserving life on land and c
 
 Lisa: But are we using scientific research as effectively as we can? The simple answer is, no, we are not. Most scientific research remains inaccessible to most people on this planet. Researchers selectively communicate their results, in the hope of gaining prestige by publishing in the top scientific journals. Data, code, materials, and other critical elements of the research process remain locked away on harddrives, never to see the light of day. We are still largely using analog methods of communication within the digital age, where we have the enormous power of Web-based technologies to share and collaborate on knowledge like never before. But we are not using this power.
 
-Nicholas: Enter Open Science. Open Science means many things to different people. Broadly, it can be thought of as transparent and collaborative ways to produce and share scholarly knowledge, while making the scientific process more rigorous and effective. 
+Erzsebet: Enter Open Science. Open Science means many things to different people. Broadly, it can be thought of as transparent and collaborative ways to produce and share scholarly knowledge, while making the scientific process more rigorous and effective. 
 
 Jo: While 'openness' has always been a fundamental part of research, ideally at least, Open Science has really taken off over the last few years, all around the world. We now have new expectations about how to work with each other to produce knowledge - more transparent, more collaborative, more continuous - and how to share that with the wider society.
 
