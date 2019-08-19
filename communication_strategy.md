@@ -15,6 +15,7 @@ Two-phase release strategy:
 * [RadicalOA](mailto:RADICALOPENACCESS@JISCMAIL.AC.UK)
 * [LIS bibliometrics](mailto:LIS-BIBLIOMETRICS@JISCMAIL.AC.UK)
 * [Accès ouvert](mailto:accesouvert@groupes.renater.fr) (note: from Serge Bauin)
+* [Italian OA list](mailto:oa-italia@openarchives.it) (note: from Elena Giglia)
 * [EU Open Data](mailto:euopendata@lists.okfn.org)
 * [Fossil Bank](mailto:fossil-bank@lists.okfn.org)
 * [Open Development](mailto:open-development@lists.okfn.org)
