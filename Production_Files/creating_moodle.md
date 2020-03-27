@@ -37,3 +37,23 @@ You can create h5p content, and download it for later use. You can indeed then u
 
 For each new release, make a new backup, save it locally, and  push it to the github repository. One can restore that version of the course (in a different moodle instance) using the restore function. Content can be pushed to other moodle platform (oncampus.de) using this strategy.
 
+## Using badges
+
+Badges are quite complicated to set up. You can indeed add badges that will be delivered when one (or several) `competencies` are obtained. So one first need to define these competencies, which comes into a `Competency frameworks`.
+
+```
+not sure??
+
+It seems Competency frameworks must be uplaoded independently of the course to work. I will investigate this
+```
+
+### creating a Competency frameworks
+
+### adding compentency to a framework
+
+### adding compentency to the course
+
+### set action for competencies completion
+
+### setting up badges
+
