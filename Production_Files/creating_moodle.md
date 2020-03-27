@@ -4,7 +4,7 @@
 
 If you have only small changes to do, you can find a moodle instance to work with, and use h5p.org for creating interactive contents. Each small step can take quite long, so if you are planning to do a lot of stuff (including h5p content), you better install a moodle instance on your computer directly (it will save your nerves!)
 
-To make a local installation, check the moodle.org page: https://download.moodle.org/releases/latest/ (check osx and windows packages !). Then install h5p interactive content plugins: https://h5p.org/moodle
+To make a local installation, check the moodle.org page: https://download.moodle.org/releases/latest/ (check osx and windows packages !). Then install h5p interactive content plugins: https://h5p.org/moodle. You may need to change some variables in the php.ini file and **restart your computer**.
 
 ## collaborative working
 
