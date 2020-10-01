@@ -1,7 +1,7 @@
-# Main management materials and content
+# Main management materials and content.
 
 Welcome to the GitHub home of the Open Science MOOC! 
-
+and i am happy to tell u,
 This repo is aimed to:
 1. Provide general information about the MOOC, which can also be found on our main [website](https://opensciencemooc.github.io/site/).
 1. Provide the core tools for managing the content development process for the MOOC.
